@@ -1,0 +1,24 @@
+.recipe {
+  width: 100%;
+  height: 100%;
+
+  padding: 2rem 4rem;
+
+  &__heading {
+    font-size: 3rem;
+  }
+
+  &__tags {
+    font-size: 1.5rem;
+    opacity: 0.6;
+  }
+
+  &__image {
+    height: 14rem;
+    margin: 0 1rem 1rem 0;
+    float: left;
+  }
+
+  &__instructions {
+  }
+}
