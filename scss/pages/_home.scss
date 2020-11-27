@@ -1,0 +1,23 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 4rem;
+
+  &__heading {
+  }
+
+  &__subheading {
+    margin-bottom: 1rem;
+
+    & a {
+      text-decoration: none;
+      color: #666;
+    }
+  }
+
+  &__description {
+  }
+}

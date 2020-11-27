@@ -1,8 +1,9 @@
 .container {
-  max-width: 80rem;
+  width: 72rem;
+  height: 38rem;
 
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 0.8fr repeat(3, 1fr);
   grid-template-rows: min-content repeat(4, 1fr);
 }
 
