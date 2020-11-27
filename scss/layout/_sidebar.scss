@@ -1,0 +1,13 @@
+.sidebar {
+  background-color: #999;
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__nav-link {
+    text-decoration: none;
+    color: #fff;
+  }
+}

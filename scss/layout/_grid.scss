@@ -1,0 +1,22 @@
+.container {
+  max-width: 80rem;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: min-content repeat(4, 1fr);
+}
+
+.header {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+}
+
+.sidebar {
+  grid-column: 1 / 2;
+  grid-row: 2 / -1;
+}
+
+.content {
+  grid-column: 2 / -1;
+  grid-row: 2 / -1;
+}
