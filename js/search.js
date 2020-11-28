@@ -1,10 +1,4 @@
-/*
-first letter: /search.php?f=
-general search: /search.php?s=
-random: /random.php
-*/
-
-
+import showRecipe from './recipe.js';
 
 async function searchMeal(event) {
   const input = event.target.value; 
@@ -21,7 +15,7 @@ async function searchMeal(event) {
     result.onclick = () => showRecipe(meal);
 
     const image = document.createElement('img');
-    image.setAttribute('src', meal.strMealThumb);
+    image.setAttribute('src', meal.strMealThumb + '/preview');
     image.setAttribute('alt', meal.strMeal);
 
     const heading = document.createElement('h2');
@@ -39,36 +33,6 @@ async function searchMeal(event) {
 
   document.querySelector('#results').innerHTML = '';
   document.querySelector('#results').appendChild(results);
-}
-
-function showRecipe(meal) {
-  const recipe = document.createElement('article');
-  recipe.classList.add('recipe');
-
-  const image = document.createElement('img');
-  image.classList.add('recipe__image');
-  image.setAttribute('src', meal.strMealThumb);
-  image.setAttribute('alt', meal.strMeal);
-
-  const heading = document.createElement('h1');
-  heading.classList.add('recipe__heading');
-  heading.innerText = meal.strMeal;
-
-  const tags = document.createElement('h2');
-  tags.classList.add('recipe__tags');
-  tags.innerText = meal.strArea + ', ' + meal.strCategory;
-
-  const instructions = document.createElement('p');
-  instructions.classList.add('recipe__instructions');
-  instructions.innerText = meal.strInstructions;
-
-  recipe.appendChild(image);
-  recipe.appendChild(heading);
-  recipe.appendChild(tags);
-  recipe.appendChild(instructions);
-
-  document.querySelector('.content').innerHTML = '';  
-  document.querySelector('.content').appendChild(recipe);  
 }
 
 document.getElementById('search').oninput = searchMeal;
