@@ -1,4 +1,11 @@
-function showRecipe(meal) {
+async function showRecipe(meal) {
+  if (typeof meal === 'string') {
+    const response = await fetch('https://www.themealdb.com/api/json/v1/1/lookup.php?i=' + meal);
+    const data = await response.json();
+
+    meal = data.meals[0];
+  }
+
   const recipe = document.createElement('article');
   recipe.classList.add('recipe');
 

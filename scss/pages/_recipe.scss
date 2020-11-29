@@ -16,17 +16,19 @@
   }
 
   &__side {
+    width: 15rem;
     margin-right: 1rem;
     float: left;
   }
 
   &__image {
-    height: 14rem;
+    width: 100%;
     border-radius: 6px;
   }
 
   &__ingredients {
-    padding-left: 1.5rem;
+    padding-left: 1.4rem;
+    max-width: 100%;
 
     &::before {
       content: "Ingedients";

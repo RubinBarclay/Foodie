@@ -20,6 +20,37 @@ body {
   justify-content: center;
   align-items: center; }
 
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #fff;
+  cursor: pointer;
+  border: 1px solid #000; }
+  .card__image {
+    width: 80%; }
+  .card__name {
+    font-weight: 400; }
+  .card__description {
+    display: none; }
+
+.result {
+  width: 100%;
+  margin-bottom: 1rem;
+  height: 100px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer; }
+  .result__name {
+    margin-top: 0.5rem; }
+  .result__image {
+    height: 100%;
+    padding-right: 1rem;
+    float: left; }
+
 .content {
   background-color: #eee; }
 
@@ -71,6 +102,19 @@ body {
     text-align: center;
     opacity: 0.6; }
 
+.categories {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  overflow: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem; }
+  .categories__results {
+    height: 100%;
+    padding: 2rem 4rem;
+    overflow: auto; }
+
 .home {
   display: flex;
   flex-direction: column;
@@ -97,13 +141,15 @@ body {
     margin: 0.5rem 0;
     opacity: 0.6; }
   .recipe__side {
+    width: 15rem;
     margin-right: 1rem;
     float: left; }
   .recipe__image {
-    height: 14rem;
+    width: 100%;
     border-radius: 6px; }
   .recipe__ingredients {
-    padding-left: 1.5rem; }
+    padding-left: 1.4rem;
+    max-width: 100%; }
     .recipe__ingredients::before {
       content: "Ingedients";
       font-size: 1.4rem;
@@ -126,17 +172,3 @@ body {
     width: 65%;
     height: 60%;
     overflow: auto; }
-  .search__result {
-    width: 100%;
-    margin-bottom: 1rem;
-    height: 100px;
-    border: 1px solid #ccc;
-    border-radius: 12px;
-    overflow: hidden;
-    cursor: pointer; }
-    .search__result h2 {
-      margin-top: 0.5rem; }
-    .search__result img {
-      height: 100%;
-      padding-right: 1rem;
-      float: left; }

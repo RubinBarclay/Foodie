@@ -20,24 +20,4 @@
     height: 60%;
     overflow: auto;
   }
-
-  &__result {
-    width: 100%;
-    margin-bottom: 1rem;
-    height: 100px;
-    border: 1px solid #ccc;
-    border-radius: 12px;
-    overflow: hidden;
-    cursor: pointer;
-
-    & h2 {
-      margin-top: 0.5rem;
-    }
-
-    & img {
-      height: 100%;
-      padding-right: 1rem;
-      float: left;
-    }
-  }
 }
