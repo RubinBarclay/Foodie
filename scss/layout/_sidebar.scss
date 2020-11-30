@@ -19,9 +19,20 @@
   }
 
   &__watermark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    color: #000;
     margin-top: auto;
     margin-bottom: 2rem;
     text-align: center;
     opacity: 0.6;
+
+    & i {
+      font-size: 1.4em;
+      padding-right: 4px;
+    }
   }
 }

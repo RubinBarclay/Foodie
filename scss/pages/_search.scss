@@ -16,8 +16,31 @@
   }
 
   &__results {
+    position: relative;
     width: 65%;
     height: 60%;
     overflow: auto;
+  }
+
+  &__placeholder,
+  &__no-results {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    font-size: 2rem;
+    opacity: 0.5;
+  }
+
+  &__no-results {
+    font-size: 3rem;
+
+    &::after {
+      content: "No recipes found...";
+      display: block;
+      font-size: 1.6rem;
+    }
   }
 }

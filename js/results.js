@@ -3,8 +3,6 @@ import showRecipe from './recipe.js';
 function genResults(meals) {
   const results = document.createElement('div');
 
-  meals = (meals) ? meals : []; // display nothing if no matches
-
   meals.forEach(meal => {
     const result = document.createElement('div');
     result.classList.add('result');
