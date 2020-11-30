@@ -13,6 +13,12 @@
     margin-bottom: 2rem;
     border: none;
     border-radius: 100px;
+
+    &,
+    &:focus,
+    &:hover {
+      outline: none;
+    }
   }
 
   &__results {
