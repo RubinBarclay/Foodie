@@ -207,6 +207,8 @@ body {
     margin-bottom: 2rem;
     border: none;
     border-radius: 100px; }
+    .search__input, .search__input:focus, .search__input:hover {
+      outline: none; }
   .search__results {
     position: relative;
     width: 65%;
