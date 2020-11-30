@@ -30,11 +30,6 @@ function categoryCard(category) {
   name.innerText = category.strCategory;
   card.appendChild(name);
 
-  const description = document.createElement('p');
-  description.classList.add('card__description');
-  description.innerText = category.strCategoryDescription;
-  card.appendChild(description);
-
   card.addEventListener('click', () => showCategory(category.strCategory));
   
   return card;

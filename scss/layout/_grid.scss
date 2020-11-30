@@ -1,6 +1,7 @@
 .container {
   width: 72rem;
   height: 38rem;
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
 
   display: grid;
   grid-template-columns: 0.8fr repeat(3, 1fr);

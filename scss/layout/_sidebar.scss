@@ -12,6 +12,7 @@
     text-decoration: none;
     color: #fff;
     padding: 1rem 2rem;
+    transition: all 0.2s;
 
     &:hover {
       background-color: rgba(256, 256, 256, 0.1);
@@ -24,11 +25,11 @@
     align-items: center;
 
     text-decoration: none;
-    color: #000;
+    color: inherit;
     margin-top: auto;
     margin-bottom: 2rem;
     text-align: center;
-    opacity: 0.6;
+    opacity: 0.8;
 
     & i {
       font-size: 1.4em;
