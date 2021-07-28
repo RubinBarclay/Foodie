@@ -1,0 +1,24 @@
+.container {
+  width: 72rem;
+  height: 38rem;
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+
+  display: grid;
+  grid-template-columns: 0.8fr repeat(3, 1fr);
+  grid-template-rows: min-content repeat(4, 1fr);
+}
+
+.header {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+}
+
+.sidebar {
+  grid-column: 1 / 2;
+  grid-row: 2 / -1;
+}
+
+.content {
+  grid-column: 2 / -1;
+  grid-row: 2 / -1;
+}

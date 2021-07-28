@@ -1,0 +1,39 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: #999;
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__nav-link {
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem 2rem;
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: rgba(256, 256, 256, 0.1);
+    }
+  }
+
+  &__watermark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    color: inherit;
+    margin-top: auto;
+    margin-bottom: 2rem;
+    text-align: center;
+    opacity: 0.8;
+
+    & i {
+      font-size: 1.4em;
+      padding-right: 4px;
+    }
+  }
+}

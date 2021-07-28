@@ -1,0 +1,50 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  width: 100%;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &__image {
+    width: 80%;
+  }
+
+  &__name,
+  &::before {
+    @include absolutelyCenter;
+    transition: all 0.2s;
+    opacity: 0;
+  }
+
+  &__name {
+    @include absolutelyCenter;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #fff;
+    transition: all 0.2s;
+  }
+
+  &::before {
+    @include absolutelyCenter;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+  }
+
+  &:hover {
+    .card__name {
+      opacity: 1;
+    }
+
+    &::before {
+      opacity: 0.2;
+    }
+  }
+}

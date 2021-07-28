@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="css/style.css">
+  <title>Foodie</title>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 class="header__heading">
+        <a href="index.html">Foodie</a>
+      </h1>
+      <h2 class="header__version">v.1.0</h2>
+    </header>
+
+    <aside class="sidebar">
+      <nav class="sidebar__nav">
+        <a href="search.html" class="sidebar__nav-link">Search</a>
+        <a href="categories.html" class="sidebar__nav-link">Categories</a>
+        <a href="random.html" class="sidebar__nav-link">Random</a>
+      </nav>
+
+      <a class="sidebar__watermark" href="https://github.com/RubinBarclay" target="_blank">
+        <i class="fa fa-github" aria-hidden="true"></i> RubinBarclay 
+      </a>
+    </aside>
+
+    <main class="content">
+      <div class="search">
+        <input id="search" class="search__input" placeholder="Arrabiata"/>
+        <div id="results" class="search__results">
+          <h2 class="search__placeholder">Search for your favorite meal</h2>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://use.fontawesome.com/68ff7f1c46.js"></script>
+  <script src="js/search.js" type="module"></script>
+</body>
+</html>

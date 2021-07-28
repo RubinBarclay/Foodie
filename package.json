@@ -1,0 +1,18 @@
+{
+  "name": "foodie",
+  "version": "1.0.0",
+  "homepage": "http://RubinBarclay.github.io/Foodie",
+  "description": "meal api application",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d ."
+  },
+  "keywords": [
+    "food"
+  ],
+  "author": "Rubin Barclay",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}

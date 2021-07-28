@@ -1,0 +1,39 @@
+.recipe {
+  width: 100%;
+  height: 100%;
+  padding: 2rem 4rem;
+  overflow: auto;
+
+  &__heading {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  &__tags {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    opacity: 0.6;
+  }
+
+  &__side {
+    width: 15rem;
+    margin-right: 1rem;
+    float: left;
+  }
+
+  &__image {
+    width: 100%;
+    border-radius: 6px;
+  }
+
+  &__ingredients {
+    padding-left: 1.4rem;
+    max-width: 100%;
+
+    &::before {
+      content: "Ingedients";
+      font-size: 1.4rem;
+      margin-left: -1rem;
+    }
+  }
+}

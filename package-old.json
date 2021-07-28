@@ -1,0 +1,27 @@
+{
+  "name": "foodie",
+  "version": "1.0.0",
+  "description": "meal api application",
+  "main": "index.js",
+  "scripts": {
+    "watch-sass": "node-sass scss/main.scss css/style.css --watch",
+    "compile-sass": "node-sass scss/main.scss css/style.comp.css",
+    "prefix-css": "postcss --use autoprefixer -b 'last 5 versions' css/style.comp.css -o css/style.prefix.css",
+    "compress-css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "build-css": "npm-run-all compile-sass prefix-css compress-css"
+  },
+  "keywords": [
+    "food"
+  ],
+  "author": "Rubin Barclay",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.0.2",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.1.10",
+    "postcss-cli": "^8.3.0"
+  },
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
